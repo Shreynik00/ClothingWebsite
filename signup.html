@@ -44,7 +44,7 @@ document.getElementById('signupForm').addEventListener('submit', async (event) =
     }
 
     // Send the sign-up request
-    const response = await fetch('https://apiserveraskit-4.onrender.com/register', {
+    const response = await fetch('https://qr-scanner-backend-k4yr.onrender.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, email, password })
@@ -63,7 +63,7 @@ document.getElementById('signupForm').addEventListener('submit', async (event) =
         document.getElementById('confirmPassword').value = '';
 
         // Redirect to index.html with username and email as URL parameters
-        window.location.href = `https://shreynik00.github.io/Askit/index.html?username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}`;
+        window.location.href = `https://shreynik00.github.io/ClothingWebsite/index.html`;
     }
 });
 </script>

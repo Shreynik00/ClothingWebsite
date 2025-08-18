@@ -206,17 +206,20 @@
   }
 
   .nav-center {
-    flex-direction: column;
-    gap: 0.8rem;
-    width: 100%;
-    align-items: center;
-  }
+  flex-direction: row;         /* keep items in a row */
+  overflow-x: auto;           /* allow scrolling horizontally */
+  white-space: nowrap;        /* prevent wrapping */
+  gap: 0.5rem;                /* spacing between items */
+  width: 100%;
+  justify-content: flex-start;
+}
 
-  .nav-center button {
-    width: 100%;
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
+.nav-center button {
+  flex: 0 0 auto;             /* prevent buttons from shrinking */
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
 
   .search-right {
     width: 100%;
@@ -385,4 +388,3 @@
 
 </body>
 </html>
-

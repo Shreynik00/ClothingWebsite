@@ -209,8 +209,23 @@
             <p>Don't have an account? <a href="https://shreynik00.github.io/ClothingWebsite/signup.html"><strong>Sign Up</strong></a></p>
         </div>
     </div>
-
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6S70E86Y84"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6S70E86Y84');
+
+    const story = [
+      `Trend Ware was born on a chilly night in a small apartment when three college friends realized there was a huge gap in the fashion market for affordable, expressive streetwear. What started as scribbles on napkins quickly evolved into a full-blown dream.`,
+      `Our brand is inspired by the chaos and color of everyday life. We believe fashion is a voice, and every piece we create has a story behind it. From eco-conscious fabrics to bold prints, we want you to wear confidence.`,
+      `Our mission? Simple — redefine urban fashion for the new gen. Whether you're a minimalist or maximalist, a coder or a creator, we've got something stitched just for you.`,
+      `Three students from different corners of India, united by a shared vision, came up with this idea one evening. What started as a simple conversation soon turned into a mission, to bring opportunities and skills together in one seamless platform.`
+    ];
+    document.getElementById('story-content').innerText = story[Math.floor(Math.random() * story.length)];
+
     window.onload = function () {
         document.getElementById('loginUsername').value = '';
         document.getElementById('loginPassword').value = '';
@@ -258,6 +273,7 @@
 
 </body>
 </html>
+
 
 
 
